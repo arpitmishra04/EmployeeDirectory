@@ -1,0 +1,21 @@
+<div id="content-employee">
+  <div id="content-employee-title">
+    <h4>Employees</h4>
+    <p>
+      Find all of your comapny's employee accounts and their associated roles.
+    </p>
+  </div>
+
+  <div class="employee-operation">
+    <button id="export-btn">
+      <img id="export-icon" src="assets/Images/Interface/Export.svg" />EXPORT
+    </button>
+    <button id="add-employee-btn" routerLink="addEmployee">
+      <img id="add-employee-icon" src="assets/Images/Interface/Add.svg" />ADD
+      EMPLOYEEE
+    </button>
+  </div>
+</div>
+<app-filter-by-letter></app-filter-by-letter>
+<app-multiselect-filter></app-multiselect-filter>
+<app-employee-table [empList]="empData"></app-employee-table>

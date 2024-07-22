@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+.side-bar {
+  width: 20%;
+}
+
+.search-bar {
+  width: 80%;
+}
+.main-container {
+  width: 80%;
+  height: 100%;
+}

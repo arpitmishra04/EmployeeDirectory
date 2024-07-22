@@ -1,0 +1,50 @@
+<div class="cards">
+  <div class="card" *ngFor="let card of cardList">
+    <div class="card__content">
+      <div class="card__info">
+        <h4>{{ card.roleName }}</h4>
+        <img src="assets/Images/edit.svg" alt="edit-icon" />
+      </div>
+      <div class="card__info">
+        <img
+          id="department-logo"
+          src="assets/Images/department-logo.svg"
+          alt="department logo"
+        />
+        <p id="department-txt" class="">Department</p>
+        <p class="right-content">{{ card.departmentName }}</p>
+      </div>
+      <div class="card__info">
+        <img
+          id="location-logo"
+          src="assets/Images/location-logo.svg"
+          alt="department logo"
+        />
+        <p id="location-txt" class="">Location</p>
+        <p class="right-content">{{ card.locationName }}</p>
+      </div>
+      <div class="card__info">
+        <p class="">Total Employees</p>
+        <div class="stack-employee-icon-container">
+          <img id="stack-img-1" src="assets/Images/user.png" alt="" />
+          <img id="stack-img-2" src="assets/Images/user.png" alt="" />
+          <img id="stack-img-3" src="assets/Images/user.png" alt="" />
+          <img id="stack-img-4" src="assets/Images/user.png" alt="" />
+          <div id="stack-img-5" src="assets/Images/user.png" alt="">
+            <p>+43</p>
+          </div>
+        </div>
+      </div>
+      <div id="all-employee-btn-container">
+        <a routerLink="roleDetails">
+          <div id="view-all-employee">
+            <p>
+              View all Employees
+              <img src="assets/Images/arrow-right.svg" alt="arrow right" />
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

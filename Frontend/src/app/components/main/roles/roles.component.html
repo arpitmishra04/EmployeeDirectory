@@ -1,0 +1,16 @@
+<div id="content-employee">
+  <div id="content-employee-title">
+    <h4>Roles</h4>
+    <p>All the roles are configured here.</p>
+  </div>
+
+  <div class="employee-operation">
+    <button id="add-employee-btn" routerLink="addRole">
+      <img id="add-employee-icon" src="assets/Images/Interface/Add.svg" />ADD
+      ROLE
+    </button>
+  </div>
+</div>
+<app-multiselect-filter [showStatus]="false"></app-multiselect-filter>
+
+<app-role-card [cardList]="cardData"></app-role-card>

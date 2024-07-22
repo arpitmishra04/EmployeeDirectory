@@ -1,0 +1,131 @@
+/* CONTENT EMPLOYEE SECTION */
+* {
+  font-family: Roboto300;
+}
+#content-employee {
+  display: flex;
+  margin-top: 0%;
+  margin-left: 2%;
+}
+#content-employee-title {
+  line-height: 81%;
+}
+
+#content-employee-title p {
+  white-space: nowrap;
+  font-size: 1.1vw;
+  color: rgba(128, 128, 128, 0.676);
+}
+
+#content-employee-title h4 {
+  font-size: 1.1vw;
+  color: rgba(0, 51, 101, 0.613);
+}
+
+.employee-operation {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+#add-employee-btn {
+  position: relative;
+  margin-top: 4%;
+  height: 50%;
+  border-radius: 7px;
+  border-width: 0px;
+  width: 18%;
+  margin-left: 8%;
+  font-size: 1vw;
+  background-color: rgb(255, 88, 88);
+  color: white;
+  font-weight: 200;
+}
+
+#add-employee-btn:hover {
+  cursor: pointer;
+}
+#add-employee-icon {
+  position: absolute;
+  width: 1.6vw;
+  left: 11%;
+  top: 18%;
+}
+
+/* FILTER BY CATEGORIES SECTION */
+
+.filter-categories {
+  display: flex;
+  position: relative;
+  height: 30%;
+  border-radius: 7px;
+  margin-top: 2%;
+  margin-left: 2%;
+  background-color: rgb(255 227 227);
+}
+
+.filter-categories p {
+  color: rgb(255, 88, 88);
+  margin-left: 1%;
+
+  font-size: 1.1vw;
+}
+
+#dropdown-options {
+  width: 60%;
+  margin-bottom: 1%;
+}
+#dropdown-options select {
+  position: absolute;
+  top: 18%;
+
+  box-sizing: border-box;
+  height: 69%;
+  border-radius: 7px;
+  border-color: red;
+  font-size: 1vw;
+  color: rgba(0, 37, 88, 0.696);
+}
+
+#location-dropdown {
+  width: 10%;
+  left: 20%;
+}
+
+#department-dropdown {
+  left: 6%;
+  width: 12%;
+}
+
+.employee-filter-btn-container {
+  display: flex;
+  margin-left: 23%;
+  width: 12%;
+}
+
+#reset,
+#apply {
+  height: 55%;
+  width: 50%;
+  margin-top: 10%;
+  border-radius: 5px;
+  border-width: 0px;
+  font-size: 0.9vw;
+}
+
+#reset {
+  color: rgb(255, 88, 88);
+  background-color: white;
+  border-width: 1px;
+  border-color: red;
+}
+#apply {
+  margin-left: 5%;
+  background-color: rgb(255, 88, 88);
+  color: white;
+}
+
+/* CARD CONTAINER */
+
+

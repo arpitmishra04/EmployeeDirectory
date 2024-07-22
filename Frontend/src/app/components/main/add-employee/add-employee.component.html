@@ -1,0 +1,191 @@
+<div class="employee-details">
+  <div class="title">Add Employee</div>
+  <div class="personal-information">
+    <div class="left-wrapper">
+      <div class="img-wrapper">
+        <img id="profilepic" src="assets/Images/user2.png" alt="profile" />
+      </div>
+      <label id="Edit-btn" for="uploadImage" class="btn">Upload</label>
+      <input type="file" style="visibility: hidden" id="uploadImage" />
+    </div>
+    <div class="right-wrapper">
+      <!-- Collecting User Input -->
+      <form id="addEmployeeForm">
+        <div class="title">Personal information</div>
+        <div class="employee-information">
+          <div class="name employee-number">
+            <label for="empNo">Employee Number</label>
+            <input
+              class="input-form-element"
+              type="text"
+              placeholder="Enter Employee Number"
+              id="empNo"
+              name="empNo"
+              required
+            />
+            <span id="requiredField"></span>
+          </div>
+          <div class="employee">
+            <div class="name">
+              <label for="firstName">First Name</label>
+              <input
+                class="input-form-element"
+                type="text"
+                placeholder="Enter First Name"
+                id="firstName"
+                name="firstName"
+                required
+              />
+              <span id="requiredFName"></span>
+            </div>
+            <div class="name">
+              <label for="lastName">Last Name</label>
+              <input
+                class="input-form-element"
+                type="text"
+                placeholder="Enter Last Name"
+                id="lastName"
+                name="lastName"
+                required
+              />
+              <span id="requiredLName"></span>
+            </div>
+            <div class="name">
+              <label for="dob">Date of Birth</label>
+              <input
+                class="input-form-element"
+                type="text"
+                placeholder="&#128197; select"
+                onfocus="(this.type='date')"
+                id="dob"
+                name="dob"
+              />
+            </div>
+          </div>
+          <div class="employee">
+            <div for="emailId" class="name">
+              <label for="email">Email Id</label>
+              <input
+                class="input-form-element"
+                type="email"
+                placeholder="Enter Email"
+                id="email"
+                name="email"
+                required
+              />
+              <span id="requiredEmail"></span>
+            </div>
+            <div class="name">
+              <label for="mobile">Mobile Number</label>
+              <input
+                class="input-form-element"
+                type="text"
+                placeholder="Enter Mobile Number"
+                id="mobile"
+                name="mobile"
+                minlength="10"
+                maxlength="10"
+              />
+              <span id="requiredMobile"></span>
+            </div>
+          </div>
+        </div>
+        <div class="title">Employment information</div>
+        <div class="employment-information">
+          <div class="details">
+            <div class="input-form name">
+              <label for="joiningDate">Joining Date</label>
+              <input
+                type="text"
+                class="input-form-element"
+                placeholder="12/8/2023"
+                onfocus="(this.type='date')"
+                id="joiningDate"
+                name="joiningDate"
+                required
+              />
+              <span id="requiredJDate"></span>
+            </div>
+            <div class="input-form">
+              <label for="location">Location</label>
+              <select class="input-form-element" name="location" id="location">
+                <option selected disabled hidden>Location</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Delhi">Delhi</option>
+              </select>
+            </div>
+          </div>
+          <div class="details">
+            <div class="input-form">
+              <label for="jobTitle">Job Title</label>
+              <select class="input-form-element" name="jobTitle" id="jobTitle">
+                <option selected disabled hidden>Job Title</option>
+                <option value="Full-stack Devloper">
+                  Full-stack Developer
+                </option>
+                <option value="Backend Developer">Backend Developer</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Content Strategist">Content Strategist</option>
+                <option value="QA Lead">QA Lead</option>
+              </select>
+            </div>
+            <div class="input-form">
+              <label for="department">Department</label>
+              <select
+                class="input-form-element"
+                name="department"
+                id="department"
+              >
+                <option selected disabled hidden>Department</option>
+                <option value="Product Engg">Product Engg</option>
+                <option value="Data Analysis">Data Analysis</option>
+                <option value="Quality Assurance">Quality Assurance</option>
+              </select>
+            </div>
+          </div>
+          <div class="details">
+            <div class="input-form">
+              <label for="assignManager">Assign Manager</label>
+              <select
+                type="text"
+                class="input-form-element"
+                id="assignManager"
+                name="assignManager"
+              >
+                <option value="" disabled selected hidden>Search</option>
+                <option value="Manager1">Manager1</option>
+                <option value="Manager2">Manager2</option>
+              </select>
+            </div>
+            <div class="input-form">
+              <label for="assignProject">Assign Project</label>
+              <select
+                type="text"
+                class="input-form-element"
+                id="assignProject"
+                name="assignProject"
+                placeholder="Search"
+              >
+                <option value="" disabled selected hidden>Search</option>
+                <option value="Project1">Project1</option>
+                <option value="Project2">Project2</option>
+              </select>
+            </div>
+          </div>
+          <div class="btn-wrapper">
+            <div class="cancel">
+              <button id="cancelBtn">Cancel</button>
+            </div>
+            <div class="add-employee">
+              <button id="addEmployeeBtn" class="form-add-employee">
+                Add Employee
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="toastBox"></div>
+  </div>
+</div>

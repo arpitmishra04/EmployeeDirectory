@@ -1,0 +1,158 @@
+.cards {
+  width: 80%;
+  grid-column: 2 / span 12; /* Adjust if needed  */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+  grid-gap: 40px; /* Spacing between cards */
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.card {
+  /* Remove unnecessary grid styles */
+  /* grid-column-end: span 4; */
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgba(203, 203, 203, 0.724);
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(227, 227, 227, 0.558);
+  transition: all 0.3s ease 0s;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+}
+
+.card__content {
+  padding: 20px;
+}
+
+.card__title {
+  margin-bottom: 20px;
+}
+
+.card__info {
+  position: relative;
+  display: flex;
+  align-self: end;
+  align-items: center;
+}
+
+.card__info p {
+  color: rgb(0, 29, 70);
+  opacity: 0.6;
+  font-size: 1em;
+}
+
+.card__info h4 {
+  font-weight: 600;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+.card__info #department-logo,
+.card__info #location-logo {
+  position: absolute;
+  padding: 0;
+}
+
+#department-txt,
+#location-txt {
+  margin-left: 6%;
+}
+
+.card__info p {
+  text-align: end;
+  margin-top: 1%;
+  padding-top: 0%;
+  margin-bottom: 1%;
+}
+.card__info img {
+  margin-left: auto;
+  padding: 5px 20px;
+}
+
+.right-content {
+  margin-left: auto;
+  padding: 5px 20px;
+}
+
+/* .right-content {
+        margin-left: auto;
+        padding: 5px 20px;
+        background-color: #303032;
+        border-radius: 20px;
+      }  */
+
+.stack-employe-icon-container {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  margin-left: auto;
+  padding: 5px 20px;
+}
+
+.stack-employee-icon-container img {
+  position: absolute;
+  width: 8%;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.stack-employee-icon-container div {
+  position: absolute;
+  width: 8%;
+  height: 95%;
+  border-radius: 50%;
+  border: 0.2px solid black;
+}
+
+#stack-img-1 {
+  top: 1%;
+  right: 20%;
+}
+
+#stack-img-2 {
+  top: 1%;
+  right: 18%;
+}
+
+#stack-img-3 {
+  top: 1%;
+  right: 16%;
+}
+
+#stack-img-4 {
+  top: 1%;
+  right: 14%;
+}
+
+#stack-img-5 {
+  top: 1%;
+  right: 12%;
+  background-color: white;
+}
+
+.stack-employee-icon-container div p {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  font-size: 0.7em;
+}
+
+#view-all-employee {
+  margin-top: 2em;
+  margin-left: 8em;
+  margin-bottom: 0;
+}
+#view-all-employee p {
+  white-space: nowrap;
+  font-size: 0.8em;
+}
+
+#all-employee-btn-container a {
+  color: black;
+}

@@ -1,0 +1,61 @@
+<div class="add-role-section">
+  <form id="add-role-form">
+    <h3>Create New Role</h3>
+
+    <div class="role-department-section">
+      <div class="form-element">
+        <label for="role-name">Role Name</label>
+        <input type="text" id="role-name" placeholder="Text" />
+      </div>
+
+      <div class="form-element">
+        <label for="department">Department</label>
+        <select id="department">
+          <option value="Product Engg">Product Engg</option>
+          <option value="Data Analysis">Data Analysis</option>
+          <option value="Quality Assurance">Quality Assurance</option>
+          <option value="HR">HR</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-element">
+      <label for="role-description">Description</label>
+      <textarea
+        id="role-description"
+        placeholder="Text"
+        rows="10"
+        style="resize: none"
+      ></textarea>
+    </div>
+
+    <div class="form-element select">
+      <label for="location">Location</label>
+      <select id="location">
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Gurugram">Gurugram</option>
+      </select>
+    </div>
+
+    <div class="form-element select">
+      <label for="Assign Employees">Assign Employees</label>
+      <input type="text" id="assign-employees" placeholder="Search" />
+      <div class="dropdown-content">
+        <label class="emp-dropdown"
+          ><img src="../Assets/Images/user.png" alt="Employee 2" />Employee
+          1<input class="checkbox" type="checkbox" value="1"
+        /></label>
+        <label class="emp-dropdown"
+          ><img src="../Assets/Images/user2.png" alt="Employee 2" />Employee
+          2<input type="checkbox" value="2"
+        /></label>
+      </div>
+    </div>
+    <div class="form-buttons">
+      <input id="cancel" type="button" value="Cancel" />
+      <input id="submit" type="submit" value="Add Role" />
+    </div>
+  </form>
+</div>

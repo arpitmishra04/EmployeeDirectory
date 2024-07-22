@@ -1,0 +1,68 @@
+<div id="employee-data-table">
+  <div id="table-operations">
+    <img
+      id="arrow-left-down-img"
+      src="assets/Images/Interface/arrow-turn left -down.svg"
+      alt="arrow-turn-left-down"
+    />
+    <button id="delete-operation-btn">Delete</button>
+    <img
+      id="add-operation-img"
+      src="assets/Images/Interface/table-add.svg"
+      alt="add-row-img "
+    />
+  </div>
+  <div id="table-data">
+    <table id="table">
+      <thead>
+        <tr>
+          <th><input type="checkbox" id="selectAll" /></th>
+          <th id="1">USER<i class="fa-solid fa-sort"></i></th>
+          <th id="2">LOCATION<i class="fa-solid fa-sort"></i></th>
+          <th id="3">DEPARTMENT<i class="fa-solid fa-sort"></i></th>
+          <th id="4">ROLE<i class="fa-solid fa-sort"></i></th>
+          <th id="5">EMP NO<i class="fa-solid fa-sort"></i></th>
+          <th id="6">STATUS<i class="fa-solid fa-sort"></i></th>
+          <th id="7">JOIN DT<i class="fa-solid fa-sort"></i></th>
+          <th>&#8943;</th>
+        </tr>
+      </thead>
+
+      <tbody id="data-output">
+        <tr data-empNo="${data.empNo}" *ngFor="let data of empList">
+          <td><input type="checkbox" class="rowCheckbox" /></td>
+          <td>
+            <div id="user-name">
+              <div id="user-img">
+                <img src="" />
+              </div>
+              <div id="user-details">
+                <h4>{{ data.firstName + " " + data.lastName }}</h4>
+                <h6>{{ data.email }}</h6>
+              </div>
+            </div>
+          </td>
+          <td>{{ data.locationName }}</td>
+          <td>{{ data.departmentName }}</td>
+          <td>{{ data.roleName }}</td>
+          <td>{{ data.employeeId }}</td>
+          <td>
+            <button id="status" class="{{ data.statusName }}">
+              {{ data.statusName }}
+            </button>
+          </td>
+          <td>{{ data.joiningDate }}</td>
+          <td class="elipse">
+            &#8943;
+            <div class="elipse-details">
+              <h6><a href="employee.html">View Details</a></h6>
+              <h6><a href="employee.html">Edit</a></h6>
+              <h6><a href="employee.html">Delete</a></h6>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="filter-status">NO DATA AVAILABLE</div>
+  </div>
+</div>

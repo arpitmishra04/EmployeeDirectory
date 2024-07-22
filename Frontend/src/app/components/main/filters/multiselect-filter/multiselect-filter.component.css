@@ -1,0 +1,50 @@
+.more-filters {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fdf2f2;
+    border: 1px solid #fbc0c0;
+    margin: 14px 0;
+    border-radius: 5px;
+    padding: 0px 10px;
+    height: 45px;
+  }
+  
+  .more-filters .options {
+    display: flex;
+    padding: 8px 10px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .more-filters .options p {
+    color: #f44848d0;
+  }
+  .more-filters .options img {
+    margin: 0px 7px;
+    height: 15px;
+    width: 15px;
+  }
+  .more-filters .buttons {
+    display: block;
+    margin: 10px 0;
+  }
+  .more-filters button {
+    height: 25px;
+    width: 55px;
+    border-radius: 3px;
+    margin-left: 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    font-family: Roboto300;
+  }
+  .more-filters .buttons .btn-reset {
+    border: 1px solid #ff616d;
+    color: #ff616eb1;
+    background-color: white;
+  }
+  .more-filters .buttons .btn-apply {
+    color: rgba(255, 255, 255, 0.82);
+    background-color: #f44848;
+    border: 1px solid #f44848;
+  }
+  

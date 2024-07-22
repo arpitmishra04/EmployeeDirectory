@@ -1,0 +1,228 @@
+* {
+  font-family: Roboto300;
+}
+#sidebar {
+  width: 100%;
+  /* height: 100%; */
+  transition: 0.1s cubic-bezier(0.36, -0.01, 0, 0.77);
+  position: relative;
+}
+.close {
+  width: 3%;
+  #menu-desc {
+    height: 0;
+    opacity: 0;
+    margin-top: 100%;
+  }
+
+  #sidebar-menu-dashboard img {
+    width: 100%;
+  }
+
+  #sidebar-menu-employees img {
+    width: 100%;
+  }
+
+  #tab-indicator {
+    display: none;
+  }
+
+  #sidebar-menu-role img {
+    width: 100%;
+  }
+  #sidebar-menu-access img {
+    width: 100%;
+  }
+
+  .sidebar-menu-item p {
+    opacity: 0;
+  }
+
+  #sidebar-menu-employees p {
+    opacity: 0;
+  }
+
+  .tezo-logo {
+    overflow: hidden;
+    height: 35px;
+    width: 100px;
+    margin-left: 6%;
+    margin-top: 58%;
+  }
+
+  #handle {
+    cursor: pointer;
+    position: absolute;
+    left: 80%;
+    top: 35%;
+    width: 90%;
+    transform: rotateY(180deg);
+  }
+
+  #update-message {
+    display: none;
+  }
+}
+
+#hehe {
+  position: relative;
+  display: flex;
+  height: 4%;
+}
+
+#handle {
+  cursor: pointer;
+  position: absolute;
+  right: -4%;
+  top: 3%;
+  width: 15%;
+}
+
+.tezo-logo img {
+  width: 45%;
+  margin-left: 9%;
+  margin-top: 8%;
+}
+
+#menu-desc {
+  font-size: 1vw;
+  padding-left: 9%;
+  padding-top: 10%;
+  color: gray;
+  opacity: 0.5;
+}
+
+.sidebar-menu-item p {
+  font-size: 1vw;
+  color: rgb(162, 162, 162);
+  font-weight: 600;
+  margin-left: 5%;
+}
+
+.sidebar-menu-item img {
+  width: 10%;
+}
+
+.sidebar-menu-item {
+  display: flex;
+  padding-left: 9%;
+}
+
+#sidebar-menu-dashboard {
+  margin-top: 6%;
+}
+
+#employee-option-container {
+  position: relative;
+}
+/* #sidebar-menu-employees {
+  border-radius: 10px;
+  margin-right: 6%;
+  padding-left: -10%;
+} */
+.employee-icon {
+  margin-top: 5%;
+  height: 70%;
+}
+.Active {
+  img {
+    filter: invert(13%) sepia(72%) saturate(5037%) hue-rotate(357deg)
+      brightness(118%) contrast(125%);
+  }
+  .sidebar-menu-item {
+    border-radius: 10px;
+    margin-right: 6%;
+    padding-left: -10%;
+    background-color: rgb(255 227 227);
+  }
+  p {
+    color: red;
+    opacity: 0.6;
+  }
+  #tab-indicator-employee {
+    position: absolute;
+    background-color: rgb(255, 63, 63);
+    width: 2%;
+    height: 100%;
+    top: 0%;
+    left: 53%;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: 45%;
+  }
+  #tab-indicator-role {
+    position: absolute;
+    background-color: rgb(255, 63, 63);
+    width: 2%;
+    height: 6%;
+    top: 38.5%;
+    left: 53%;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: 45%;
+  }
+}
+
+#sidebar-menu-access {
+  padding-bottom: 90%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#update-message {
+  /* margin-top: 100vh; */
+  margin-right: 5%;
+  margin-left: 2%;
+  border-radius: 6px;
+  background-color: rgba(255, 88, 88, 0.102);
+  bottom: 0;
+}
+
+#update-message h5 {
+  font-size: 78%;
+  color: rgba(255, 0, 0, 0.605);
+  padding-top: 5%;
+  padding-left: 11%;
+  margin-bottom: 0%;
+  text-align: left;
+}
+
+#update-message p {
+  font-size: 1.1vw;
+  padding-left: 4%;
+  text-align: left;
+  margin-top: 3%;
+  margin-bottom: 0%;
+  line-height: 3vh;
+  color: rgba(128, 128, 128, 0.384);
+}
+
+#update-message-btn-container {
+  width: 100%;
+}
+#dismiss-btn,
+#accept-btn {
+  margin-top: 3%;
+  margin-bottom: 5%;
+  width: 29%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+#dismiss-btn {
+  margin-left: 15%;
+  background-color: rgba(255, 88, 88, 0.289);
+  border-style: none;
+  color: red;
+}
+
+#accept-btn {
+  margin-left: 4%;
+  background-color: rgba(255, 0, 0, 0.673);
+  border-style: none;
+  color: white;
+}

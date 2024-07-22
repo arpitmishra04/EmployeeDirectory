@@ -1,0 +1,19 @@
+<div id="employee-filter">
+  <div class="filter-icon">
+    <img
+      id="filter-img"
+      src="assets/Images/Interface/filter.svg"
+      alt="filter-icon"
+    />
+  </div>
+
+  <div class="search-by-letter-container">
+    <button
+      class="search-by-letter"
+      *ngFor="let letter of alphabets"
+      (click)="handleClick(letter)"
+    >
+      {{ letter }}
+    </button>
+  </div>
+</div>

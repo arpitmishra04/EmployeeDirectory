@@ -1,0 +1,27 @@
+<div class="more-filters">
+  <div class="options">
+    <p>Filter</p>
+    <img src="assets/Images/menu.png" alt="Filter Icon" />
+    <app-multiselect-dropdown
+      *ngIf="showStatus"
+      [options]="status"
+      [dropdownLabel]="statusLabel"
+    ></app-multiselect-dropdown>
+    <app-multiselect-dropdown
+      [options]="locations"
+      [dropdownLabel]="locationLable"
+    ></app-multiselect-dropdown>
+    <app-multiselect-dropdown
+      [options]="drpartments"
+      [dropdownLabel]="departmentLabel"
+    ></app-multiselect-dropdown>
+  </div>
+  <div class="buttons" id="filterButtons">
+    <button class="btn-reset" type="button" (click)="resetFilters()">
+      Reset
+    </button>
+    <button class="btn-apply" type="button" (click)="displayEmployees()">
+      Apply
+    </button>
+  </div>
+</div>
